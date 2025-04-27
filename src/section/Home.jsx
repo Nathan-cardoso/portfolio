@@ -9,10 +9,10 @@ function Home() {
                 style={{ backgroundImage: `url(${background})` }}
             ></div>
 
-            <h2 className="bg-[#0a0a0a] rounded-2xl text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center font-[Roboto] z-10">
-                Olá, eu sou Nathan Cardoso
-            </h2>
-            <h3 className="bg-[#0a0a0a] rounded-2xl font-bold text-center mt-4 font-[Ubuntu_Mono] text-xl sm:text-3xl md:text-4xl lg:text-5xl z-10">
+            <h1 className="bg-[#0a0a0a] rounded-3xl text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-center font-[Merriweather] z-10">
+                Nathan Cardoso
+            </h1>
+            <h3 className="bg-[#0a0a0a] rounded-2xl font-bold text-center mt-4 font-[Ubuntu_Mono] text-xl sm:text-3xl md:text-3xl lg:text-4xl z-10">
                 <TypeAnimation 
                     className="text-red-700"
                     sequence={["Desenvolvedor Back-end"]}
@@ -20,6 +20,8 @@ function Home() {
                     speed={50}
                 />
             </h3>
+
+
         </div>
     )
 }

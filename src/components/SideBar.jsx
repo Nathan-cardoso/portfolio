@@ -29,7 +29,7 @@ function SideBar() {
             <div className="flex flex-col bg-black border border-red-950 h-[80%] w-[5.5rem] rounded-e-2xl fixed left-0 top-1/2 transform -translate-y-1/2 z-10">
                 <div className="flex flex-col items-center justify-center h-full space-y-8">
                     {navLinks.map(({ href, icon }) => (
-                        <a href={href} className="text-red-700 text-2xl" key={href}>
+                        <a href={href} className="text-red-700 text-2xl hover:text-white transition duration-300" key={href}>
                             {icon}
                         </a>
                     ))}
@@ -42,7 +42,7 @@ function SideBar() {
         return (
             <div className="font-[Ubuntu_Mono] fixed top-0 left-0 w-full bg-black z-20 shadow-md px-4 py-2 justify-center space-x-10 flex">
                 {navLinks.map(({ href, label }) => (
-                    <a href={href} className="text-red-700 text-lg sm:text-2xl  " key={href}>
+                    <a href={href} className="text-red-700 text-lg sm:text-2xl hover:text-white transition duration-300" key={href}>
                         {label}
                     </a>
                 ))}
