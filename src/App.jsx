@@ -3,6 +3,8 @@ import Home from './section/Home';
 import SideBar from './components/SideBar';
 import About from './section/About';
 import Projects from './section/Projects';
+import Contact from './section/Contact';
+
 function App() {
 
   return (
@@ -11,6 +13,7 @@ function App() {
         <Home />
       < About />
       < Projects />
+      < Contact />
     </div>
 
   )
