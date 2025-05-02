@@ -15,7 +15,7 @@ function Home() {
             <h3 className="bg-[#0a0a0a] rounded-2xl font-bold text-center mt-4 font-[Ubuntu_Mono] text-xl sm:text-3xl md:text-3xl lg:text-4xl z-10">
                 <TypeAnimation 
                     className="text-red-700"
-                    sequence={["Desenvolvedor Back-end"]}
+                    sequence={["Desenvolvedor Back-end & Freelancer"]}
                     cursor={true}
                     speed={50}
                 />
