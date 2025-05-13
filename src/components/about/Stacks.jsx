@@ -10,7 +10,6 @@ const logos = [pythonLogo, djangoLogo, ,nodeLogo, postgresLogo, awsLogo];
 function Stacks() {
   return (
     <div >
-        {/* <h3 className="font-[Ubuntu_Mono] text-4xl  text-center font-bold p-10 text-red-600">Tecnologias que trabalho</h3> */}
         <div className="flex flex-wrap justify-center gap-6 p-10">
       {logos.map((logo, index) => (
         <motion.img
