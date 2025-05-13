@@ -1,17 +1,16 @@
 import { motion } from "framer-motion";
-import  pythonLogo  from "../assets/images/stacks/python.svg";
-import  nodeLogo  from "../assets/images/stacks/node.svg";
-import  postgresLogo  from "../assets/images/stacks/postgres.svg";
-import  djangoLogo  from "../assets/images/stacks/django.svg";
-import  awsLogo  from "../assets/images/stacks/aws.svg";
-import { div } from "framer-motion/client";
+import  pythonLogo  from "../../assets/images/stacks/python.svg";
+import  nodeLogo  from "../../assets/images/stacks/node.svg";
+import  postgresLogo  from "../../assets/images/stacks/postgres.svg";
+import  djangoLogo  from "../../assets/images/stacks/django.svg";
+import  awsLogo  from "../../assets/images/stacks/aws.svg";
 
 const logos = [pythonLogo, djangoLogo, ,nodeLogo, postgresLogo, awsLogo];
 
 function Stacks() {
   return (
     <div >
-        <h3 className="font-[Ubuntu_Mono] text-3xl text-center p-10 text-red-800">Stacks</h3>
+        {/* <h3 className="font-[Ubuntu_Mono] text-4xl  text-center font-bold p-10 text-red-600">Tecnologias que trabalho</h3> */}
         <div className="flex flex-wrap justify-center gap-6 p-10">
       {logos.map((logo, index) => (
         <motion.img

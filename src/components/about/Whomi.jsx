@@ -1,6 +1,6 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
-import profilePhoto from '../assets/images/profile.jpeg';
+import profilePhoto from '../../assets/images/profile.jpeg';
 
 function Whoami() {
     const imageRef = useRef(null);
