@@ -10,11 +10,11 @@
 
 :root{
     /* Colors */
-    --backgroud-default: #EBEBDF;
-    --color-special: #4A429E;
-    --color-emphasis: #2F1888;
-    --color-aux: #191265;
-    --font-color-normal: #0f0f0f;
+    --backgroud-default: #0D0D0D;
+    --color-special: #D98E04;
+    --color-emphasis: #D9A404;
+    --color-aux: #F2CB05;
+    --font-color-normal: #f1f1f1;
     /* Fonts */
     --text-emphasis: "Poppins", sans-serif;
     --text-special: "Ubuntu Mono", monospace;
@@ -32,34 +32,32 @@ body{
 
 header{
     position: fixed;
-    top: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 100%;
-    padding: 1rem 9%;
-    background: transparent;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
     backdrop-filter: blur(5px); 
     -webkit-backdrop-filter: blur(10px); 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
 }
 
 
 nav a{
     font-family: var(--texto-normal);
-    font-size: 1.8rem;
     color: var(--font-color-normal);
-    margin-left: 4rem;
+    font-size: 1.2rem;
+    padding: 5px 20px;
     font-weight: 500;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
 }
 
-nav a:hover,
-nav a.active{
-    color: var(--color-emphasis);
-    border-bottom: 3px solid var(--color-emphasis);
+nav a:hover{
+    color: var(--color-aux);
+    transition: 0.2s ease;
 }
 
 @media(max-width:995px){
@@ -77,9 +75,7 @@ nav a.active{
         border-top: 0.1rem solid rgba(0,0,0,0.1);
     }
 
-    nav.active{
-        display: block;
-    }
+
 
     nav a{
         display: block;
@@ -87,8 +83,7 @@ nav a.active{
         margin: 3rem 0;
     }
 
-    nav a:hover,
-    nav a.active{
+    nav a:hover{
         padding: 1rem;
         border-radius: 0.5rem;
         border-bottom: 0.5rem solid var(--color-emphasis);
@@ -117,7 +112,7 @@ section{
 }
 
 span{
-    color: var(--color-emphasis);
+    color: var(--color-aux);
 }
 
 #home-content h3{
@@ -171,7 +166,7 @@ span{
 .btn:hover{
     transform: scale3d(1.03);
     background-color: var(--color-emphasis);
-    color: var(--backgroud-default);
+    color: white;
     box-shadow: 0 0 25px var(--color-emphasis);
 }
 
