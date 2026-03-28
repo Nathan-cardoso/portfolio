@@ -1,3 +1,5 @@
+function scena_create(){
+
 const scene = document.getElementById('scene');
 
 const charCount = 150;
@@ -21,3 +23,48 @@ for (let i = 0; i < charCount; i++) {
 
     scene.appendChild(char);
 }
+
+}
+
+const texts = [
+    "Desenvolvedor Back-end",
+    "Engenheiro de Software"
+];
+
+let speed = 100;
+let eraseSpeed = 50;
+let delayBetweenTexts = 1500;
+
+let textIndex = 0;
+let charIndex = 0;
+
+const typingElement = document.getElementById("typing-text");
+
+function type() {
+    if (charIndex < texts[textIndex].length) {
+        typingElement.textContent += texts[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, speed);
+    } else {
+        setTimeout(erase, delayBetweenTexts);
+    }
+}
+
+function erase() {
+    if (charIndex > 0) {
+        typingElement.textContent = texts[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, eraseSpeed);
+    } else {
+        textIndex = (textIndex + 1) % texts.length;
+        setTimeout(type, 500);
+    }
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    setTimeout(type, 500);
+});
+
+
+scena_create()
+
