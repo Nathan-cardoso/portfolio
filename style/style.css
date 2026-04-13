@@ -1,0 +1,77 @@
+@import url(home.css);
+
+
+header{
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+
+    z-index: 2;
+}
+
+/* Navbar */
+
+nav a{
+    font-family: var(--text-normal);
+    color: var(--font-color-normal);
+    font-size: 1.5rem;
+    padding: 5px 20px;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+
+nav a:hover{
+    color: var(--color-aux);
+}
+
+/* Background animado */
+.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    perspective: 300px;
+    font-family: var(--text-special);
+
+    z-index: 0;
+    
+}
+
+.binary-char {
+    position: absolute;
+    will-change: transform, opacity;
+    animation: float 10s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(15px) rotateX(0deg);
+        opacity: var(--start-opacity);
+    }
+    100% {
+        transform: translateY(-15px) rotateX(5deg);
+        opacity: var(--end-opacity);
+    }
+}
+
+/* Conteúdo na frente do background */
+#home > *:not(.scene){
+    position: relative;
+    z-index: 1;
+}
+
+
+

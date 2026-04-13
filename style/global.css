@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+:root{
+    /* Colors */
+    --background-footer: #070826;
+    --background-default: #0f0f0f;
+    --color-special: #73168C;
+    --color-emphasis: #9F2CBF;
+    --color-aux: #C04BF2;
+    --font-color-normal: #f1f1f1;
+
+    /* Fonts */
+    --text-emphasis: "Poppins", sans-serif;
+    --text-special: "Ubuntu Mono", monospace;
+    --text-normal: "Roboto", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: var(--background-default);
+    color: var(--font-color-normal);
+}
+
+section{
+    min-height: 100vh;
+    padding: 5rem ;
+}
+
+section:not(#home) h2 {
+  text-align: center;
+  color: var(--color-emphasis);
+  font-size: 2rem;
+  font-family: var(--text-special);
+}

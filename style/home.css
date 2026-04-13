@@ -1,77 +1,4 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    border: none;
-    outline: none;
-    text-decoration: none;
-}
-
-:root{
-    /* Colors */
-    --background-footer: #070826;
-    --background-default: #0f0f0f;
-    --color-special: #73168C;
-    --color-emphasis: #9F2CBF;
-    --color-aux: #C04BF2;
-    --font-color-normal: #f1f1f1;
-
-    /* Fonts */
-    --text-emphasis: "Poppins", sans-serif;
-    --text-special: "Ubuntu Mono", monospace;
-    --text-normal: "Roboto", sans-serif;
-}
-
-body{
-    width: 100%;
-    height: 100vh;
-    overflow-x: hidden;
-    background-color: var(--background-default);
-    color: var(--font-color-normal);
-}
-
-/* Layout */
-
-header{
-    position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    padding: 30px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: transparent;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(10px);
-
-    z-index: 2;
-}
-
-section{
-    min-height: 100vh;
-    padding: 5rem ;
-}
-
-/* Navbar */
-
-nav a{
-    font-family: var(--text-normal);
-    color: var(--font-color-normal);
-    font-size: 1.5rem;
-    padding: 5px 20px;
-    font-weight: 500;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease;
-}
-
-nav a:hover{
-    color: var(--color-aux);
-}
-
-/* Section home */
+@import url(global.css);
 
 #home{
     position: relative;
@@ -79,56 +6,14 @@ nav a:hover{
     justify-content: center;
     align-items: center;
     gap: 8rem;
-
     min-height: 100vh;
     padding: 5rem 9%;
-
     font-size: 1.6rem;
     font-family: var(--text-emphasis);
     background-color: black;
 
     overflow: hidden;
 }
-
-/* Background animado */
-.scene {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-    perspective: 300px;
-    font-family: var(--text-special);
-
-    z-index: 0;
-    
-}
-
-.binary-char {
-    position: absolute;
-    will-change: transform, opacity;
-    animation: float 10s ease-in-out infinite alternate;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(15px) rotateX(0deg);
-        opacity: var(--start-opacity);
-    }
-    100% {
-        transform: translateY(-15px) rotateX(5deg);
-        opacity: var(--end-opacity);
-    }
-}
-
-/* Conteúdo na frente do background */
-#home > *:not(.scene){
-    position: relative;
-    z-index: 1;
-}
-
-/* Text */
 
 .home-content h1{
     font-size: 5rem;
@@ -162,8 +47,6 @@ nav a:hover{
     25%, 75% { opacity: 0; }
 }
 
-/* Icons */
-
 .social-icons a{
     display: inline-flex;
     justify-content: center;
@@ -191,7 +74,6 @@ nav a:hover{
     border: 0.2rem solid var(--color-aux);
 }
 
-/* Button */
 
 .btn{
     display: inline-block;
@@ -215,11 +97,7 @@ nav a:hover{
     box-shadow: 0 0 25px var(--color-aux);
     background-color: var(--color-aux);
 }
-
-/* Section Sobre mim */
-
 /* Responsividade */
-
 
 @media (max-width: 1000px){
 
@@ -271,22 +149,22 @@ nav a:hover{
     }
 
     .home-content h1{
-        font-size: 2.4rem;
+        font-size: 2.7rem;
     }
 
     .home-content h2{
-        font-size: 1.6rem;
+        font-size: 2rem;
     }
 
     .social-icons a{
-        width: 3rem;
-        height: 3rem;
+        width: 2.8rem;
+        height: 2.8rem;
         font-size: 1.4rem;
         margin: 10px;
     }
 
     .btn{
-        font-size: 1rem;
+        font-size: 22px;
         font-weight: bold;
         padding: 15px;
         margin: 10px auto;
@@ -294,18 +172,17 @@ nav a:hover{
 
 }
 
-/* Tablet small */
 @media (max-width: 600px){
     #home{
         justify-content: center;
     }
 
     .home-content h1{
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .home-content h2{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .social-icons a{
@@ -316,14 +193,13 @@ nav a:hover{
     }
 
     .btn{
-        font-size: 1rem;
+        font-size: 20px;
         font-weight: bold;
         padding: 15px;
         margin: 10px auto;
     }
 }
 
-/* Mobile small */
 @media (max-width: 450px){
     #home{
         flex-direction: column;
@@ -332,7 +208,7 @@ nav a:hover{
     }
 
     .home-content h1{
-        font-size: 25px;
+        font-size: 30px;
         line-height: 1.2;
     }
 
@@ -342,7 +218,7 @@ nav a:hover{
     } 
 
     .home-content h2{
-        font-size: 14px;
+        font-size: 20px;
     }
 
     
