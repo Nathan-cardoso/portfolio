@@ -9,11 +9,11 @@
 
 :root{
     /* Colors */
-    --background-footer: #070826;
+    --background-footer: #260A07;
     --background-default: #0f0f0f;
-    --color-special: #73168C;
-    --color-emphasis: #9F2CBF;
-    --color-aux: #C04BF2;
+    --color-special: #59040C;
+    --color-emphasis: #900403;
+    --color-aux: #b72e2e;
     --font-color-normal: #f1f1f1;
 
     /* Fonts */
