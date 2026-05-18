@@ -84,8 +84,8 @@
     letter-spacing: 0.3rem;
 
     color: white;
-    background-color: var(--color-special);
-    border: 2px solid var(--color-special);
+    background-color: var(--color-emphasis);
+    border: 2px solid var(--color-emphasis);
     border-radius: 4rem;
 
     cursor: pointer;
@@ -96,6 +96,7 @@
     transform: scale(1.03);
     box-shadow: 0 0 25px var(--color-aux);
     background-color: var(--color-aux);
+    border: 2px solid var(--color-aux);
 }
 /* Responsividade */
 
@@ -139,7 +140,7 @@
     nav a:hover{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid var(--color-emphasis);
+        border-bottom: 0.5rem solid var(--color-aux);
     }
 }
 
