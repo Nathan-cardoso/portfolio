@@ -48,7 +48,7 @@ body{
 
 section{
     min-height: 100vh;
-    padding: 3rem 2.5rem;
+    padding: 2rem 2rem;
     display: flex;
     align-items: center;
 }
@@ -65,7 +65,7 @@ section{
     align-items: center;
     gap: 1.2rem;
     margin-bottom: 4.5rem;
-    font-size: .85rem;
+    font-size: 1.2rem;
     font-weight: 500;
     letter-spacing: .4em;
     text-transform: uppercase;
@@ -74,7 +74,7 @@ section{
 
 .section-label span{
     font-family: var(--font-serif);
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: .1em;
     color: var(--accent);
 }
@@ -87,36 +87,6 @@ section{
     background: var(--line);
 }
 
-/* Estado vazio (projetos / experiências) */
-.empty-state{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    padding: 5rem 2rem;
-    text-align: center;
-}
-
-.empty-state svg{
-    width: 78px;
-    height: 78px;
-}
-
-.empty-state p{
-    font-size: .8rem;
-    font-weight: 500;
-    letter-spacing: .35em;
-    text-transform: uppercase;
-    color: var(--muted);
-}
-
-.empty-state small{
-    max-width: 420px;
-    font-family: var(--font-serif);
-    font-size: 1.05rem;
-    line-height: 1.9;
-    color: var(--ink-soft);
-}
 
 /* Rodapé */
 footer{
