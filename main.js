@@ -49,6 +49,21 @@ function scrollSpy() {
     });
 }
 
+function initScrollReveal() {
+    if (reducedMotion || typeof ScrollReveal === "undefined") return;
+
+    const sr = ScrollReveal({
+        distance: "45px",
+        duration: 500,
+        easing: "ease-out",
+        reset: false
+    });
+
+    sr.reveal(".about-photo", { origin: "left", delay: 0 });
+    sr.reveal(".about-kaizen", { origin: "up", delay: 120 });
+    sr.reveal(".about-text", { origin: "up", delay: 280, interval: 140 });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     if (reducedMotion) {
         typingElement.textContent = texts[0];
@@ -57,6 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     scrollSpy();
+    initScrollReveal();
     window.addEventListener("scroll", scrollSpy, { passive: true });
 });
 
