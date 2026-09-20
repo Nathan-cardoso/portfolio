@@ -62,6 +62,8 @@ function initScrollReveal() {
     sr.reveal(".about-photo", { origin: "left", delay: 0 });
     sr.reveal(".about-kaizen", { origin: "up", delay: 120 });
     sr.reveal(".about-text", { origin: "up", delay: 280, interval: 140 });
+    sr.reveal(".stacks-title", { origin: "up", delay: 100 });
+    sr.reveal(".stack-item", { origin: "up", distance: "25px", interval: 200, delay: 100 });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
