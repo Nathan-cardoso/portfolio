@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
     <title>Portfolio — Nathan C.L</title>
@@ -69,16 +70,26 @@
                         </div>
 
                         <p class="about-text">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat.
+                            Sou Nathan Cardoso <strong>Desenvolvedor Back-end</strong>, estudante de <strong>Engenharia de Software</strong> e entuasiasta em pesquisas voltadas a <strong>Cybersegurança</strong>. Ao longo da minha graduação e estudos independetes, tive a oportunidade de trabalhar com o desenvolvimento de aplicações WEB, APIs, Cloud, Inteligência Artificial e atuar em pesquisas voltadas a Cybersecurança.
                         </p>
                         <p class="about-text">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-                            dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Sou adepto da filosofia <em>Kaizen</em>, que significa melhoria contínua, ou seja, a evolução constante de pequenos passos para alcançar grandes resultados. Um curioso por natureza e fascinado por tecnologia e livros :)
                         </p>
+                    </div>
+                </div>
+
+                <div class="about-stacks">
+                    <h3 class="stacks-title">Stacks</h3>
+
+                    <div class="stacks-gallery">
+                        <div class="stack-item"><i class="devicon-python-plain " aria-hidden="true"></i><span>Python</span></div>
+                        <div class="stack-item"><i class="devicon-django-plain colored" aria-hidden="true"></i><span>Django</span></div>
+                        <div class="stack-item"><i class="devicon-fastapi-plain colored" aria-hidden="true"></i><span>FastAPI</span></div>
+                        <div class="stack-item"><i class="devicon-nodejs-plain colored" aria-hidden="true"></i><span>Node</span></div>
+                        <div class="stack-item"><i class="devicon-react-original colored" aria-hidden="true"></i><span>React</span></div>
+                        <div class="stack-item"><i class="devicon-linux-plain colored" aria-hidden="true"></i><span>Linux</span></div>
+                        <div class="stack-item"><i class="devicon-bash-plain colored" aria-hidden="true"></i><span>Shell Script</span></div>
+                        <div class="stack-item"><i class="devicon-docker-plain colored" aria-hidden="true"></i><span>Docker</span></div>
                     </div>
                 </div>
 
@@ -95,9 +106,55 @@
             <div class="container-sm">
 
                 <div class="section-label"><span>03</span> Experiências</div>
+
+                <div class="exp-cards">
+                    <article class="exp-card" data-modal="modal-exp-1" role="button" tabindex="0" aria-haspopup="dialog">
+                        <div class="exp-card-img">
+                            <img src="assets/imgs/logoufersa_simples.png" alt="Logo" loading="lazy">
+                        </div>
+                        <div class="exp-card-body">
+<h3>Bolsista | 2022 - 2023</h3>
+                            <p>Fui contemplado com uma bolsa acadêmica no ano de 2022, onde atuei como analista de dados pela UFERSA.</p>
+                        </div>
+                    </article>
+
+                    <article class="exp-card" data-modal="modal-exp-2" role="button" tabindex="0" aria-haspopup="dialog">
+                        <div class="exp-card-img">
+                            <img src="assets/imgs/profile-programming.png" alt="Logo" loading="lazy">
+                        </div>
+                        <div class="exp-card-body">
+<h3>Desenvolvedor Freelancer | 2025 - atual</h3>
+                            <p>Atualmente, atuo como desenvolvedor freelancer full-stack, com foco em aplicações WEB.</p>
+                        </div>
+                    </article>
+                </div>
+
             </div>
         </section>
     </main>
+
+    <div class="modal" id="modal-exp-1" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-content">
+            <button class="modal-close" data-modal-close aria-label="Fechar">&times;</button>
+            <h3>Bolsista | 2022 - 2023</h3>
+            <p>Fui contemplado com uma bolsa acadêmica no ano de 2022, onde atuei como analista de dados pela UFERSA.</p>
+            <p>O projeto envolveu o desenvolvimento de uma aplicação web destinada a apoiar agentes de saúde na identificação de áreas com maior incidência de notificações de arboviroses. Minhas responsabilidades incluíram a coleta e organização de dados, a criação de um banco de dados, a análise detalhada dos dados e a aplicação de modelos estatísticos para prever futuros casos de Dengue, chikungunya e zika.</p>
+            <h4>Tecnologias utilizadas</h4>
+            <p>No decorrer deste projeto, tive a oportunidade de trabalhar com <strong>Python</strong> e suas bibliotecas especializadas em análise de dados, como <strong>pandas</strong>, <strong>Matplotlib</strong>, <strong>Statsmodels</strong>, <strong>Prophet</strong>, além de ferramentas como <strong>Excel</strong> e <strong>MySQL</strong>.</p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-exp-2" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-backdrop" data-modal-close></div>
+        <div class="modal-content">
+            <h3>Desenvolvedor Freelancer | 2025 - atual</h3>
+            <p>Atualmente, atuo como desenvolvedor freelancer full-stack, com foco em aplicações WEB.</p>
+            <p>Sou responsável por todo o ciclo de desenvolvimento, desde a coleta de requisitos até a implementação, testes e deploy, garantindo soluções robustas e eficientes para meus clientes.</p>
+            <h4 > Tecnologias utilizadas</h4>
+            <p>Atualmente, trabalho com as tecnologia: <strong>Django</strong>, <strong>FastAPI</strong>, <strong>Node.js</strong>, <strong>React</strong> e <strong>AWS</strong> para desenvolvimento de aplicações WEB. </p>
+        </div>
+    </div>
 
     <footer>
         <p>Desenvolvido por Nathan Cardoso © 2026.</p>
