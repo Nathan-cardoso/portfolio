@@ -59,11 +59,55 @@ function initScrollReveal() {
         reset: false
     });
 
-    sr.reveal(".about-photo", { origin: "left", delay: 0 });
+sr.reveal(".about-photo", { origin: "left", delay: 0 });
     sr.reveal(".about-kaizen", { origin: "up", delay: 120 });
     sr.reveal(".about-text", { origin: "up", delay: 280, interval: 140 });
     sr.reveal(".stacks-title", { origin: "up", delay: 100 });
-    sr.reveal(".stack-item", { origin: "up", distance: "25px", interval: 200, delay: 100 });
+    sr.reveal(".stack-item", { origin: "up", distance: "25px", interval: 100 });
+    sr.reveal(".exp-card", { origin: "up", delay: 120, interval: 120 });
+}
+
+let lastTrigger = null;
+
+function openModal(modal, trigger) {
+    lastTrigger = trigger || document.activeElement;
+    modal.classList.add("open");
+    modal.setAttribute("aria-hidden", "false");
+    const closeEl = modal.querySelector(".modal-close");
+    if (closeEl) closeEl.focus();
+}
+
+function closeModal(modal) {
+    if (!modal || !modal.classList.contains("open")) return;
+    modal.classList.remove("open");
+    modal.setAttribute("aria-hidden", "true");
+    if (lastTrigger) lastTrigger.focus();
+}
+
+function initModals() {
+    document.querySelectorAll(".exp-card").forEach(card => {
+        card.addEventListener("click", () => {
+            const modal = document.getElementById(card.dataset.modal);
+            if (modal) openModal(modal, card);
+        });
+
+        card.addEventListener("keydown", e => {
+            if (e.key === "Enter" || e.key === " ") {
+                e.preventDefault();
+                card.click();
+            }
+        });
+    });
+
+    document.querySelectorAll("[data-modal-close]").forEach(el => {
+        el.addEventListener("click", () => closeModal(el.closest(".modal")));
+    });
+
+    document.addEventListener("keydown", e => {
+        if (e.key === "Escape") {
+            document.querySelectorAll(".modal.open").forEach(m => closeModal(m));
+        }
+    });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -75,6 +119,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     scrollSpy();
     initScrollReveal();
+    initModals();
     window.addEventListener("scroll", scrollSpy, { passive: true });
 });
 
