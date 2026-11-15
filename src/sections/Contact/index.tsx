@@ -3,11 +3,19 @@ import { GithubIcon, LinkedinIcon } from '../../components/ui/BrandIcons'
 import Section from '../../components/ui/Section'
 
 const channels = [
-  { href: 'mailto:seu@email.com', label: 'seu@email.com', Icon: Mail },
-  { href: 'https://github.com/seu-usuario', label: 'github.com/seu-usuario', Icon: GithubIcon },
   {
-    href: 'https://linkedin.com/in/seu-usuario',
-    label: 'linkedin.com/in/seu-usuario',
+    href: 'mailto:nathancar.linhares77@gmail.com',
+    label: 'nathancar.linhares77@gmail.com',
+    Icon: Mail,
+  },
+  {
+    href: 'https://github.com/Nathan-cardoso',
+    label: 'github.com/Nathan-cardoso',
+    Icon: GithubIcon,
+  },
+  {
+    href: 'https://www.linkedin.com/in/nathanlinhares/',
+    label: 'linkedin.com/in/nathanlinhares',
     Icon: LinkedinIcon,
   },
 ]
@@ -23,12 +31,12 @@ export default function Contact() {
           Vamos construir algo juntos?
         </h3>
         <p className="mt-4 max-w-xl leading-relaxed text-white/80">
-          Estou aberto a oportunidades, colaborações e trocas sobre desenvolvimento,
-          design de interfaces e open source.
+          Estou aberto a oportunidades, colaborações e trocas sobre desenvolvimento
+          back-end, cloud, dados e cybersegurança. Baseado em Pau dos Ferros, RN.
         </p>
 
         <a
-          href="mailto:seu@email.com"
+          href="mailto:nathancar.linhares77@gmail.com"
           className="mt-8 inline-flex items-center gap-2 bg-white px-5 py-3 text-sm font-semibold text-arch transition-colors hover:bg-[#e8f3fa]"
         >
           <Mail size={16} />

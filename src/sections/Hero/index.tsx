@@ -1,16 +1,20 @@
-import { ArrowUpRight, Mail } from 'lucide-react'
+import { ArrowUpRight, Download, Mail } from 'lucide-react'
 import { GithubIcon, LinkedinIcon } from '../../components/ui/BrandIcons'
 
 const socials = [
-  { href: 'https://github.com/seu-usuario', label: 'GitHub', Icon: GithubIcon },
-  { href: 'https://linkedin.com/in/seu-usuario', label: 'LinkedIn', Icon: LinkedinIcon },
-  { href: 'mailto:seu@email.com', label: 'E-mail', Icon: Mail },
+  { href: 'https://github.com/Nathan-cardoso', label: 'GitHub', Icon: GithubIcon },
+  {
+    href: 'https://www.linkedin.com/in/nathanlinhares/',
+    label: 'LinkedIn',
+    Icon: LinkedinIcon,
+  },
+  { href: 'mailto:nathancar.linhares77@gmail.com', label: 'E-mail', Icon: Mail },
 ]
 
 function Prompt({ command }: { command: string }) {
   return (
     <>
-      <span className="text-[#6fbf73]">zen@arch</span>{' '}
+      <span className="text-[#6fbf73]">nathan@arch</span>{' '}
       <span className="text-[#777]">~</span>{' '}
       <span className="text-arch">%</span>{' '}
       <span className="text-[#e5e5e5]">{command}</span>
@@ -37,14 +41,17 @@ export default function Hero() {
           </div>
 
           <p className="mt-8 font-mono text-sm text-arch">$ whoami</p>
-          <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">Seu Nome</h1>
+          <h1 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
+            Nathan Cardoso
+          </h1>
           <p className="mt-4 font-mono text-base text-muted sm:text-lg">
-            front-end developer <span className="text-arch">/</span> ui enthusiast
+            back-end developer <span className="text-arch">/</span> software engineering
+            student
           </p>
           <p className="mt-6 max-w-xl leading-relaxed text-muted">
-            Construo interfaces rápidas, acessíveis e com atenção aos detalhes. Gosto de
-            transformar problemas complexos em experiências simples, usando React,
-            TypeScript e Tailwind CSS.
+            Desenvolvedor back-end e estudante de Engenharia de Software na UFERSA.
+            Construo APIs e aplicações web com Python, Django, FastAPI e React, com
+            interesse em cloud, dados e cybersegurança.
           </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
@@ -56,10 +63,12 @@ export default function Hero() {
               <ArrowUpRight size={16} />
             </a>
             <a
-              href="#contact"
+              href="/curriculo.pdf"
+              download="curriculo.pdf"
               className="inline-flex items-center gap-2 border border-line bg-surface-2 px-5 py-3 text-sm font-semibold transition-colors hover:border-arch hover:text-arch"
             >
-              Entrar em contato
+              <Download size={16} />
+              Baixar CV
             </a>
           </div>
 
@@ -87,7 +96,7 @@ export default function Hero() {
               <span className="h-2.5 w-2.5 rounded-full bg-[#ffbd2e]" />
               <span className="h-2.5 w-2.5 rounded-full bg-[#27c93f]" />
             </div>
-            <span className="font-mono text-[11px] text-[#777]">zen@arch: ~</span>
+            <span className="font-mono text-[11px] text-[#777]">nathan@arch: ~</span>
           </div>
 
           <div className="space-y-4 p-5 font-mono text-[13px] leading-relaxed sm:p-6">
@@ -96,8 +105,8 @@ export default function Hero() {
                 <Prompt command="cat about.txt" />
               </p>
               <p className="mt-1 pl-4 text-[#b0b0b0]">
-                Desenvolvedor front-end focado em performance, acessibilidade e
-                interfaces bem resolvidas.
+                Desenvolvedor back-end focado em APIs, aplicações web e pesquisa em
+                cybersegurança.
               </p>
             </div>
 
@@ -105,7 +114,7 @@ export default function Hero() {
               <p>
                 <Prompt command="ls stack/" />
               </p>
-              <p className="mt-1 pl-4 text-arch">react typescript tailwind vite</p>
+              <p className="mt-1 pl-4 text-arch">python django fastapi node react</p>
             </div>
 
             <div>
@@ -114,29 +123,32 @@ export default function Hero() {
               </p>
               <div className="mt-2 flex gap-4 pl-4">
                 <div className="grid h-12 w-12 shrink-0 place-items-center border border-arch/40 text-2xl font-bold text-arch">
-                  A
+                  N
                 </div>
                 <div className="space-y-0.5 text-[#b0b0b0]">
                   <p>
-                    <span className="text-[#6fbf73]">zen</span>@
+                    <span className="text-[#6fbf73]">nathan</span>@
                     <span className="text-[#6fbf73]">arch</span>
                   </p>
-                  <p className="text-[#555]">-----------</p>
+                  <p className="text-[#555]">-------------</p>
                   <p>
-                    <span className="text-arch">OS</span>: Arch Linux
+                    <span className="text-arch">OS</span>: Linux
                   </p>
                   <p>
-                    <span className="text-arch">Shell</span>: zsh
+                    <span className="text-arch">Shell</span>: bash
                   </p>
                   <p>
-                    <span className="text-arch">Editor</span>: neovim
+                    <span className="text-arch">Foco</span>: Back-end
+                  </p>
+                  <p>
+                    <span className="text-arch">UFERSA</span>: Eng. Software
                   </p>
                 </div>
               </div>
             </div>
 
             <p className="flex items-center gap-1">
-              <span className="text-[#6fbf73]">zen@arch</span>
+              <span className="text-[#6fbf73]">root@arch</span>
               <span className="text-[#777]">~</span>
               <span className="text-arch">%</span>
               <span className="inline-block h-4 w-2 animate-blink bg-[#ddd]" />

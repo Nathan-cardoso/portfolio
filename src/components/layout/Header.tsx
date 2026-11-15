@@ -38,10 +38,10 @@ export default function Header() {
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-6 py-3">
         <a href="#hero" className="group flex items-center gap-2.5" aria-label="Ir para o início">
           <span className="grid h-7 w-7 place-items-center bg-arch font-mono text-[11px] font-bold text-white">
-            ZN
+            NC
           </span>
           <span className="font-mono text-sm font-bold text-[#999] transition-colors group-hover:text-white">
-            zen<span className="text-arch">@</span>portfolio
+            nathan<span className="text-arch">@</span>portfolio
           </span>
         </a>
 

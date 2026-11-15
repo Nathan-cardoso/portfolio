@@ -2,19 +2,19 @@ import type { Experience } from '../types'
 
 export const experience: Experience[] = [
   {
-    role: 'Desenvolvedor Front-end',
-    company: 'Empresa Atual',
-    period: '2024 — Atual',
+    role: 'Desenvolvedor Freelancer',
+    company: 'Autônomo',
+    period: '2025 — Atual',
     description:
-      'Desenvolvimento e manutenção de interfaces para produtos web, com foco em performance, acessibilidade e evolução do design system.',
-    tags: ['React', 'TypeScript', 'Tailwind CSS'],
+      'Atuo como desenvolvedor full-stack, responsável por todo o ciclo de desenvolvimento — da coleta de requisitos à implementação, testes e deploy de aplicações web.',
+    tags: ['Django', 'FastAPI', 'Node.js', 'React', 'AWS'],
   },
   {
-    role: 'Desenvolvedor Front-end',
-    company: 'Empresa Anterior',
-    period: '2022 — 2024',
+    role: 'Bolsista — Analista de Dados',
+    company: 'UFERSA',
+    period: '2022 — 2023',
     description:
-      'Implementação de novas funcionalidades, integração com APIs e melhoria contínua da experiência em aplicações de médio porte.',
-    tags: ['Vue.js', 'Node.js', 'PostgreSQL'],
+      'Participei de pesquisa sobre arboviroses no Rio Grande do Norte, apoiando agentes de saúde com uma aplicação web e modelos estatísticos para prever casos de dengue, chikungunya e zika.',
+    tags: ['Python', 'Pandas', 'Matplotlib', 'Prophet', 'MySQL'],
   },
 ]

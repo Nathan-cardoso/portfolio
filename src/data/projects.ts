@@ -2,27 +2,32 @@ import type { Project } from '../types'
 
 export const projects: Project[] = [
   {
-    title: 'Painel de métricas',
+    title: 'Pesca Tralhas',
     description:
-      'Dashboard em tempo real com gráficos, filtros e exportação de relatórios para times de produto.',
-    tags: ['React', 'TypeScript', 'Recharts', 'Tailwind'],
-    href: '#',
-    repo: '#',
+      'Jogo 2D educativo sobre poluição dos rios e saneamento, alinhado aos ODS da ONU. Desenvolvido em Unity com foco em conscientização ambiental.',
+    tags: ['Unity', 'C#', 'Game Design'],
+    repo: 'https://github.com/Nathan-cardoso/pesca-tralhas',
   },
   {
-    title: 'CLI de deploy',
+    title: 'Análise de Arboviroses — RN',
     description:
-      'Ferramenta de linha de comando para automatizar builds e publicações em múltiplos ambientes.',
-    tags: ['Node.js', 'TypeScript', 'CLI'],
-    href: '#',
-    repo: '#',
+      'Análise de séries temporais e previsão de casos de dengue, chikungunya e zika em municípios do Rio Grande do Norte.',
+    tags: ['Python', 'Pandas', 'ARIMA', 'Data Science'],
+    repo: 'https://github.com/Nathan-cardoso/analise-arboviroses-rn',
   },
   {
-    title: 'Design system',
+    title: 'Tiro ao Alvo com Merry',
     description:
-      'Biblioteca de componentes acessíveis, documentada e focada em consistência entre produtos.',
-    tags: ['React', 'Storybook', 'A11y'],
-    href: '#',
-    repo: '#',
+      'Jogo 3D de tiro ao alvo com Three.js, com modos canhão e telespectador em um cenário de navio pirata.',
+    tags: ['JavaScript', 'Three.js', 'WebGL'],
+    href: 'https://nathan-cardoso.github.io/Tiro-ao-alvo/system/',
+    repo: 'https://github.com/Nathan-cardoso/Tiro-ao-alvo',
+  },
+  {
+    title: 'Gerenciador de Horários',
+    description:
+      'Aplicação em Java para organização de horários acadêmicos, desenvolvida para a disciplina de Programação Orientada a Objetos.',
+    tags: ['Java', 'POO'],
+    repo: 'https://github.com/Nathan-cardoso/Gerenciador-de-horarios',
   },
 ]

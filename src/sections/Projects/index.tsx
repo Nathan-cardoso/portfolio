@@ -6,7 +6,7 @@ import { projects } from '../../data/projects'
 export default function Projects() {
   return (
     <Section id="projects" title="Projetos" index="02">
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:grid-cols-2">
         {projects.map((project, index) => (
           <article
             key={project.title}
