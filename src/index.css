@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --page: #f6f9fc;
+  --surface: #ecf2f5;
+  --surface-2: #ffffff;
+  --ink: #222222;
+  --muted: #5b6770;
+  --line: #bbccdd;
+  --arch: #1793d1;
+  --arch-strong: #0088cc;
+  --nav: #333333;
+  color-scheme: light;
+}
+
+.dark {
+  --page: #1e1e1e;
+  --surface: #2a2a2a;
+  --surface-2: #333333;
+  --ink: #dddddd;
+  --muted: #999999;
+  --line: #3f3f3f;
+  --arch: #1793d1;
+  --arch-strong: #33aadd;
+  --nav: #262626;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-arch: var(--arch);
+  --color-arch-strong: var(--arch-strong);
+  --color-nav: var(--nav);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 200ms ease, color 200ms ease;
+}
+
+::selection {
+  background-color: var(--arch);
+  color: #ffffff;
+}
+
+:where(a, button):focus-visible {
+  outline: 2px solid var(--arch);
+  outline-offset: 3px;
+}
