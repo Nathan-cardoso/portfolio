@@ -1,0 +1,8 @@
+Bibliotecas utilizadas no portfolio
+
+- lucide-react (ícones SVG para React)
+  Instalação: npm install lucide-react
+  Documentação: https://lucide.dev/guide/packages/lucide-react
+
+- tailwindcss (já presente no projeto; usado para todo o layout)
+  Documentação: https://tailwindcss.com/docs
