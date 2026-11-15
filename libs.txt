@@ -4,5 +4,9 @@ Bibliotecas utilizadas no portfolio
   Instalação: npm install lucide-react
   Documentação: https://lucide.dev/guide/packages/lucide-react
 
+- react-type-animation (animação de digitação no Hero)
+  Instalação: npm install react-type-animation
+  Documentação: https://react-type-animation.netlify.app/
+
 - tailwindcss (já presente no projeto; usado para todo o layout)
   Documentação: https://tailwindcss.com/docs
